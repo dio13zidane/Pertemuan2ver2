@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Dio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <!-- header -->
+        <nav>
+            <a href="index.html"><img src="images/logo.png" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"><i class='bx bxs-home'></i>HOME</a></li>
+                    <li><a href="about.html"><i class='bx bxs-user-pin' ></i>ABOUT</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <!-- header -->
+
+        <!-- text pada halaman utama -->
+        <div class="text-box">
+            <h1>Dio Abiyyu Zidane Ginting</h1>
+            <p>Tugas Kelompok Mata Kuliah Design Web
+                <br>Teknologi Informatika - STMIK KAPUTAMA</p>
+            
+            <a href="about.html" class="hero-btn">About</a>
+            <br>
+            <br>
+            <p><br><br>Copyright © Dio Abiyyu Zidane Ginting</p>
+
+        </div>
+        <!-- text pada halaman utama -->
+
+    </section>
+
+
+<!-- JavaScript for Toggle Menu -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+<!-- JavaScript for Toggle Menu -->
+
+</body>
+</html>
